@@ -1,0 +1,308 @@
+//Классы вертикального ритма
+
+//pt - padding-top
+//pb - padding-bottom
+//mt - margin-top
+//mb - margin-bottom
+
+// 8
+.vr-1 {
+  background-color: rgba(117, 138, 244, 1);
+  &__pt {
+    padding-top: 1rem !important;
+  }
+  &__pb {
+    padding-bottom: 1rem !important;
+  }
+  &__mt {
+    margin-top: 1rem !important;
+  }
+  &__mb {
+    margin-bottom: 1rem !important;
+  }
+}
+
+// 16
+.vr-2 {
+  background-color: rgba(117, 244, 244, 1);
+  &__pt {
+    padding-top: 2rem !important;
+  }
+  &__pb {
+    padding-bottom: 2rem !important;
+  }
+  &__mt {
+    margin-top: 2rem !important;
+  }
+  &__mb {
+    margin-bottom: 2rem !important;
+  }
+}
+
+// 24
+.vr-3 {
+  background-color: rgba(124, 234, 156, 1);
+  &__pt {
+    padding-top: 3rem !important;
+  }
+  &__pb {
+    padding-bottom: 3rem !important;
+  }
+  &__mt {
+    margin-top: 3rem !important;
+  }
+  &__mb {
+    margin-bottom: 3rem !important;
+  }
+}
+
+// 32
+.vr-4 {
+  background-color: rgba(255, 230, 109, 1);
+  &__pt {
+    padding-top: 4rem !important;
+  }
+  &__pb {
+    padding-bottom: 4rem !important;
+  }
+  &__mt {
+    margin-top: 4rem !important;
+  }
+  &__mb {
+    margin-bottom: 4rem !important;
+  }
+}
+
+// 40
+.vr-5 {
+  background-color: rgba(255, 107, 107, 1);
+  &__pt {
+    padding-top: 5rem !important;
+  }
+  &__pb {
+    padding-bottom: 5rem !important;
+  }
+  &__mt {
+    margin-top: 5rem !important;
+  }
+  &__mb {
+    margin-bottom: 5rem !important;
+  }
+}
+
+// 48
+.vr-6 {
+  background-color: rgba(105, 73, 102, 1);
+  &__pt {
+    padding-top: 6rem !important;
+  }
+  &__pb {
+    padding-bottom: 6rem !important;
+  }
+  &__mt {
+    margin-top: 6rem !important;
+  }
+  &__mb {
+    margin-bottom: 6rem !important;
+  }
+}
+
+// 64
+.vr-7 {
+  background-color: rgba(78, 205, 196, 1);
+  &__pt {
+    padding-top: 8rem !important;
+  }
+  &__pb {
+    padding-bottom: 8rem !important;
+  }
+  &__mt {
+    margin-top: 8rem !important;
+  }
+  &__mb {
+    margin-bottom: 8rem !important;
+  }
+}
+
+// 80
+.vr-8 {
+  background-color: rgba(82, 72, 156, 1);
+  &__pt {
+    padding-top: 10rem !important;
+  }
+  &__pb {
+    padding-bottom: 10rem !important;
+  }
+  &__mt {
+    margin-top: 10rem !important;
+  }
+  &__mb {
+    margin-bottom: 10rem !important;
+  }
+}
+
+@include Query($md) {
+
+  // 32
+  .vr-5 {
+    &__pt {
+      padding-top: 4rem !important;
+    }
+    &__pb {
+      padding-bottom: 4rem !important;
+    }
+    &__mt {
+      margin-top: 4rem !important;
+    }
+    &__mb {
+      margin-bottom: 4rem !important;
+    }
+  }
+
+  // 40
+  .vr-6 {
+    &__pt {
+      padding-top: 5rem !important;
+    }
+    &__pb {
+      padding-bottom: 5rem !important;
+    }
+    &__mt {
+      margin-top: 5rem !important;
+    }
+    &__mb {
+      margin-bottom: 5rem !important;
+    }
+  }
+
+  // 56
+  .vr-7 {
+    &__pt {
+      padding-top: 7rem !important;
+    }
+    &__pb {
+      padding-bottom: 7rem !important;
+    }
+    &__mt {
+      margin-top: 7rem !important;
+    }
+    &__mb {
+      margin-bottom: 7rem !important;
+    }
+  }
+
+  // 72
+  .vr-8 {
+    &__pt {
+      padding-top: 9rem !important;
+    }
+    &__pb {
+      padding-bottom: 9rem !important;
+    }
+    &__mt {
+      margin-top: 9rem !important;
+    }
+    &__mb {
+      margin-bottom: 9rem !important;
+    }
+  }
+}
+
+@include Query($lt-md) {
+  // 16
+  .vr-3 {
+    background-color: rgba(124, 234, 156, 1);
+    &__pt {
+      padding-top: 2rem !important;
+    }
+    &__pb {
+      padding-bottom: 2rem !important;
+    }
+    &__mt {
+      margin-top: 2rem !important;
+    }
+    &__mb {
+      margin-bottom: 2rem !important;
+    }
+  }
+  // 24
+  .vr-4 {
+    background-color: rgba(255, 230, 109, 1);
+    &__pt {
+      padding-top: 3rem !important;
+    }
+    &__pb {
+      padding-bottom: 3rem !important;
+    }
+    &__mt {
+      margin-top: 3rem !important;
+    }
+    &__mb {
+      margin-bottom: 3rem !important;
+    }
+  }
+  // 32
+  .vr-5 {
+    background-color: rgba(255, 107, 107, 1);
+    &__pt {
+      padding-top: 4rem !important;
+    }
+    &__pb {
+      padding-bottom: 4rem !important;
+    }
+    &__mt {
+      margin-top: 4rem !important;
+    }
+    &__mb {
+      margin-bottom: 4rem !important;
+    }
+  }
+  // 32
+  .vr-6 {
+    background-color: rgba(105, 73, 102, 1);
+    &__pt {
+      padding-top: 4rem !important;
+    }
+    &__pb {
+      padding-bottom: 4rem !important;
+    }
+    &__mt {
+      margin-top: 4rem !important;
+    }
+    &__mb {
+      margin-bottom: 4rem !important;
+    }
+  }
+  // 48
+  .vr-7 {
+    background-color: rgba(78, 205, 196, 1);
+    &__pt {
+      padding-top: 6rem !important;
+    }
+    &__pb {
+      padding-bottom: 6rem !important;
+    }
+    &__mt {
+      margin-top: 6rem !important;
+    }
+    &__mb {
+      margin-bottom: 6rem !important;
+    }
+  }
+  // 64
+  .vr-8 {
+    background-color: rgba(82, 72, 156, 1);
+    &__pt {
+      padding-top: 8rem !important;
+    }
+    &__pb {
+      padding-bottom: 8rem !important;
+    }
+    &__mt {
+      margin-top: 8rem !important;
+    }
+    &__mb {
+      margin-bottom: 8rem !important;
+    }
+  }
+}

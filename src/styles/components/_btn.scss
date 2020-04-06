@@ -1,0 +1,33 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $family;
+    font-weight: $regular;
+    font-size: 14px;
+    line-height: 20px;
+
+    border-radius: 6px;
+
+    &_little {
+        width: 120px;
+        height: 32px;
+    }
+    &:hover, &:focus {
+        outline: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .btn {
+        font-size: 18px;
+        line-height: 22px;
+        &_little {
+            width: 150px;
+            height: 42px;
+        }
+    }
+}

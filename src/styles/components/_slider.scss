@@ -1,0 +1,236 @@
+// .slider {
+//   font-family: "Roboto", Arial, Helvetica, sans-serif;
+//   color: $dark;
+
+//   padding-top: 35px;
+  
+//   &-container {
+//     .slider-button-prev {
+//       top: 15px;
+//       right: 15px;
+//     }
+//   }
+
+//   &__title {
+//     margin: 0;
+//     margin-bottom: 35px;
+//   }
+
+//   &__description {
+//     margin: 0;
+//     margin-bottom: 32px;
+
+//     font-size: 32px;
+//     line-height: 40px;
+//   }
+
+//   &-pagination {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+
+//     display: block;
+//     width: 48px !important;
+//     height: 48px;
+
+//     font-size: 32px;
+//     line-height: 40px;
+
+//     border-top: 2px solid $dark;
+
+//     .swiper-pagination-bullet {
+//       display: block;
+//       width: 20px;
+//       height: 20px;
+//       margin: 0 !important;
+
+//       text-align: center;
+
+//       background: none;
+//     }
+//   }
+//   &-go[role="button"],
+//   &-back[role="button"] {
+//     position: absolute;
+//     top: 550px;
+//     right: 15px;
+//     bottom: 0;
+
+//     display: block;
+//     width: 40px;
+//     height: 40px;
+
+//     background-color: $blue;
+//     background-image: url("/img/svg/Group.svg");
+//     background-repeat: no-repeat;
+//     background-position: center 9px;
+
+//     &::after {
+//       display: none;
+//     }
+//   }
+
+//   &-go[role="button"] {
+//     transform: rotate(90deg);
+//   }
+
+//   &-back[role="button"] {
+//     transform: rotate(-90deg);
+//   }
+// }
+
+// .swiper-container {
+//   position: relative;
+
+//   height: 535px;
+//   padding-top: 50px !important;
+//   padding-bottom: 100px;
+// }
+
+
+
+// @media screen and (min-width: 768px) {
+//   .slider {
+//     &__text {
+//       max-width: 435px;
+//       margin-bottom: 35px;
+//       margin-left: auto;
+
+//       font-size: 16px;
+//       line-height: 22px;
+//     }
+//     &__description {
+//       max-width: 455px;
+//       padding-left: 110px;
+
+//       font-size: 36px;
+//       line-height: 46px;
+//     }
+//   }
+
+//   .slider-go[role="button"],
+//   .slider-back[role="button"] {
+//     top: 0;
+
+//     transform: translateY(50%);
+//   }
+
+//   .slider-go[role="button"] {
+//     top: 110px;
+//     right: 0;
+
+//     transform: rotate(180deg);
+//   }
+
+//   .slider-back[role="button"] {
+//     top: 10px;
+//     right: 0;
+//     left: auto;
+//   }
+
+//   .slider-pagination {
+//     display: flex;
+//     flex-direction: column;
+//     height: 100%;
+//     padding-top: 65px;
+
+//     border: none;
+
+//     .swiper-pagination-bullet {
+//       display: flex !important;
+//       justify-content: center;
+//       align-items: center;
+//       width: 60px;
+//       height: 74px;
+//       margin-bottom: 20px;
+
+//       font-size: 28px ;
+//       text-align: center;
+//       color: rgba($color: $dark, $alpha: 0.4);
+
+//       border-top: 2px solid rgba($color: $dark, $alpha: 0.4);
+//       border-radius: 0;
+//       opacity: 1;
+
+//       &:focus,
+//       &:active {
+//         outline: none;
+//       }
+
+//       &:last-child {
+//         margin-bottom: 0;
+//       }
+
+//       &-active {
+//         font-size: 36px;
+//         line-height: 46px;
+//         color: $blue;
+
+//         border-top-color: $blue;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 1024px) {
+//   .slider {
+//     &__text {
+//       max-width: 550px;
+//     }
+
+//     &__description {
+//       max-width: 570px;
+
+//       font-size: 48px;
+//       line-height: 56px;
+//     }
+//     .slider-back[role="button"] {
+//       top: 25px;
+//     }
+//     &-pagination {
+//       padding-top: 85px;
+//     }
+//     .swiper-pagination-bullet {
+//       font-size: 32px;
+//       line-height: 40px;
+
+//       &-active {
+//         font-size: 48px;
+//         line-height: 56px;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 1280px) {
+//   .slider {
+//     &__text {
+//       max-width: 720px;
+//       margin-right: auto;
+//     }
+
+//     &__description {
+//       max-width: 740px;
+//       padding-left: 140px;
+
+//       font-size: 60px;
+//       line-height: 68px;
+//     }
+//     &-pagination {
+//       padding-top: 105px;
+//     }
+
+//     .slider-back[role="button"] {
+//       top: 35px;
+//     }
+//     .swiper-pagination-bullet {
+//       font-size: 40px;
+//       line-height: 56px;
+
+//       &-active {
+//         font-size: 60px;
+//         line-height: 68px;
+//       }
+//     }
+//   }
+// }

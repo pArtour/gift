@@ -1,0 +1,16 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "vendor/libs";
+@import "base/fonts";
+@import "base/general";
+
+@import "components/slider";
+
+@import "components/container";
+
+@import "components/title";
+@import "components/text";
+@import "components/btn";
+
+@import "../blocks/modules";

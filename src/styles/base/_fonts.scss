@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Gilroy", Arial, Helvetica, sans-serif;
+    src: url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+         url("../fonts/Gilroy-Regular.woff") format("woff");
+    font-display: swap;
+    font-weight: $regular;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gilroy", Arial, Helvetica, sans-serif;
+    src: url("../fonts/Gilroy-Bold.woff2") format("woff2"),
+         url("../fonts/Gilroy-Bold.woff") format("woff");
+    font-display: swap;
+    font-weight: $bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gilroy", Arial, Helvetica, sans-serif;
+    src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"),
+         url("../fonts/Gilroy-Semibold.woff") format("woff");
+    font-display: swap;
+    font-weight: $semi-bold;
+    font-style: normal;
+}
+
+// в font-family просто имя шрифта, не надо переменную передавать
+// и затем просто передаем в класс инфу, пример ниже
+// .h1 {
+//   font-size: 6rem;//48px;
+//   line-height: 7rem;//56px;
+//   font-family: Fira-Black, ‘Arial Black’, Gadget, sans-serif;
+//   text-transform: uppercase;
+// }
