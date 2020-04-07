@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 60px;
+    width: 150px; //200
+    height: 40px; //60
     text-transform: uppercase;
     text-decoration: none;
     font-family: $family;
@@ -23,6 +23,8 @@
 }
 @media screen and (min-width: 768px) {
     .btn {
+        width: 200px;
+        height: 60px;   
         font-size: 18px;
         line-height: 22px;
         &_little {

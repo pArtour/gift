@@ -402,8 +402,85 @@ template {
   font-style: normal;
 }
 
-* {
+body * {
   box-sizing: border-box;
+}
+
+.home {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+}
+
+.home__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+.home__block_gray {
+  background-color: #F2F2F2;
+}
+
+.home__block_img {
+  display: none;
+}
+
+.home__title {
+  margin: 0;
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+
+.home__text {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.home__button {
+  margin: 0 auto;
+  background-color: #F7941E;
+  color: white;
+}
+
+.about {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+}
+
+.about__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 20px;
+  padding-top: 0;
+}
+
+.about__block_gray {
+  background-color: #F2F2F2;
+}
+
+.about__block_img {
+  display: none;
+}
+
+.about__button {
+  margin: 0 auto;
+  background-color: transparent;
+  border: 1px solid #F7941E;
+  color: #F7941E;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.about__text {
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .container {
@@ -412,6 +489,7 @@ template {
 }
 
 .title {
+  font-weight: 400;
   font-size: 28px;
   line-height: 36px;
 }
@@ -426,8 +504,8 @@ template {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 60px;
+  width: 150px;
+  height: 40px;
   text-transform: uppercase;
   text-decoration: none;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
@@ -455,6 +533,7 @@ template {
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 45px;
 }
 
 .header__nav {
@@ -469,8 +548,7 @@ template {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding: 0 20px;
-  padding-top: 10px;
+  padding: 10px 20px;
 }
 
 .header__item {
@@ -511,12 +589,94 @@ template {
 }
 
 @media screen and (min-width: 768px) {
+  .home {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .home__block {
+    text-align: left;
+    width: 50%;
+    padding: 0;
+  }
+
+  .home__block_img {
+    display: block;
+  }
+
+  .home__block-wrapper {
+    padding: 0px 40px;
+  }
+
+  .home__title {
+    font-size: 36px;
+  }
+
+  .home__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .home__button {
+    margin: 0;
+    transition: all .3s ease-in;
+  }
+
+  .home__button:hover,
+  .home__button:focus {
+    outline: none;
+    background-color: transparent;
+    color: #F7941E;
+    border: 1px solid #F7941E;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .about__block {
+    width: 50%;
+    padding: 50px 0;
+  }
+
+  .about__block_img {
+    padding: 0;
+    display: block;
+  }
+
+  .about__block-wrapper {
+    padding: 0px 40px;
+  }
+
+  .about__title {
+    margin-bottom: 25px;
+  }
+
+  .about__text {
+    margin-bottom: 25px;
+  }
+
+  .about__button {
+    margin: 0;
+  }
+
+  .about__img {
+    width: 100%;
+    height: 100%;
+  }
+
   .container {
     padding-left: 40px;
     padding-right: 40px;
   }
 
   .btn {
+    width: 200px;
+    height: 60px;
     font-size: 18px;
     line-height: 22px;
   }
@@ -527,6 +687,7 @@ template {
   }
 
   .header {
+    margin: 0;
     padding: 25px 40px 30px 40px;
   }
 
@@ -559,6 +720,43 @@ template {
 }
 
 @media screen and (min-width: 1024px) {
+  .home__block-wrapper {
+    padding: 0;
+    width: 370px;
+  }
+
+  .home__title {
+    width: 440px;
+    font-size: 56px;
+    line-height: 70px;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .home__text {
+    width: 422px;
+    margin-bottom: 50px;
+  }
+
+  .about__block-wrapper {
+    width: 450px;
+  }
+
+  .about__text {
+    margin-bottom: 35px;
+  }
+
+  .about__button {
+    transition: all .3s ease-in;
+  }
+
+  .about__button:hover,
+  .about__button:focus {
+    outline: none;
+    background-color: #F7941E;
+    color: white;
+  }
+
   .container {
     padding-left: 80px;
     padding-right: 80px;
@@ -609,6 +807,30 @@ template {
 }
 
 @media screen and (min-width: 1280px) {
+  .home__block-wrapper {
+    width: 570px;
+  }
+
+  .home__title {
+    width: auto;
+  }
+
+  .home__text {
+    width: auto;
+  }
+
+  .about__block-wrapper {
+    width: 570px;
+  }
+
+  .about__title {
+    width: auto;
+  }
+
+  .about__text {
+    width: auto;
+  }
+
   .title {
     font-size: 40px;
     line-height: 56px;
