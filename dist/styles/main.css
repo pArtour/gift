@@ -483,6 +483,48 @@ body * {
   margin-bottom: 40px;
 }
 
+.sign {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 20px;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  background-color: #F7941E;
+}
+
+.sign__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.sign__text {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.sign__buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign__btn {
+  margin-bottom: 10px;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.sign__btn:last-child {
+  margin-bottom: 0;
+}
+
+.sign__btn_black {
+  color: white;
+  background-color: #000;
+}
+
 .container {
   padding-left: 20px;
   padding-right: 20px;
@@ -669,6 +711,26 @@ body * {
     height: 100%;
   }
 
+  .sign {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+  }
+
+  .sign__buttons-wrapper {
+    flex-direction: row;
+  }
+
+  .sign__text {
+    margin: 0;
+  }
+
+  .sign__btn {
+    margin: 0;
+    transform: scale(0.9);
+  }
+
   .container {
     padding-left: 40px;
     padding-right: 40px;
@@ -757,6 +819,37 @@ body * {
     color: white;
   }
 
+  .sign {
+    padding: 60px 80px;
+  }
+
+  .sign__text,
+  .sign__title {
+    font-size: 32px;
+  }
+
+  .sign__btn {
+    transition: all .2s ease-in;
+    transform: scale(1);
+  }
+
+  .sign__btn:last-child {
+    margin-left: 20px;
+  }
+
+  .sign__btn:hover,
+  .sign__btn:focus {
+    outline: none;
+    background-color: #000;
+    color: white;
+  }
+
+  .sign__btn_black:hover,
+  .sign__btn_black:focus {
+    background-color: transparent;
+    color: #000;
+  }
+
   .container {
     padding-left: 80px;
     padding-right: 80px;
@@ -829,6 +922,10 @@ body * {
 
   .about__text {
     width: auto;
+  }
+
+  .sign {
+    padding: 60px 235px;
   }
 
   .title {
