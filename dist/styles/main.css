@@ -542,6 +542,86 @@ body * {
   margin-bottom: 20px;
 }
 
+.blog {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+}
+
+.blog__title {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.blog__text {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.blog__quote {
+  font-weight: 400;
+  background-color: #231F20;
+  color: white;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+}
+
+.blog__quote-img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.blog__quote-author {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.blog__quote-blockquote {
+  margin: 0;
+}
+
+.blog__quote-text {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 24px;
+  padding: 0px 30px;
+}
+
+.blog__quote-link {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.blog__post {
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.35);
+}
+
+.blog__post:last-child {
+  margin-bottom: 0;
+}
+
+.blog__post-title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.blog__post-text {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.blog__post-link {
+  color: #000;
+  text-decoration: none;
+}
+
 .container {
   padding-left: 20px;
   padding-right: 20px;
@@ -788,6 +868,55 @@ body * {
     margin-bottom: 40px;
   }
 
+  .blog {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .blog__title {
+    margin-bottom: 20px;
+  }
+
+  .blog__text {
+    margin-bottom: 30px;
+  }
+
+  .blog__quote {
+    display: flex;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .blog__quote-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+  }
+
+  .blog__quote-text {
+    width: 300px;
+    margin-bottom: 35px;
+  }
+
+  .blog__quote-img {
+    width: 50%;
+    margin: 0;
+  }
+
+  .blog__post {
+    margin: 0;
+    width: 48%;
+    padding: 20px;
+  }
+
+  .blog__post-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .container {
     padding-left: 40px;
     padding-right: 40px;
@@ -925,6 +1054,47 @@ body * {
     color: #000;
   }
 
+  .blog__text {
+    margin-bottom: 45px;
+  }
+
+  .blog__quote-text-wrapper {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    padding-left: 75px;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .blog__quote-author {
+    margin-bottom: 25px;
+  }
+
+  .blog__quote-text {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    line-height: 58px;
+  }
+
+  .blog__quote-link {
+    margin-top: auto;
+  }
+
+  .blog__post {
+    box-shadow: none;
+    transition: all .3s ease-out;
+    padding: 48px;
+  }
+
+  .blog__post:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .blog__post-title {
+    font-size: 24px;
+  }
+
   .container {
     padding-left: 80px;
     padding-right: 80px;
@@ -1034,6 +1204,24 @@ body * {
 
   .gifts__text {
     margin-bottom: 60px;
+  }
+
+  .blog {
+    padding-top: 88px;
+    padding-bottom: 80px;
+  }
+
+  .blog__title {
+    margin-bottom: 30px;
+  }
+
+  .blog__text {
+    margin-bottom: 70px;
+  }
+
+  .blog__quote-text {
+    width: 500px;
+    font-size: 48px;
   }
 
   .title {
