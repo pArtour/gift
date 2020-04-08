@@ -1,0 +1,35 @@
+.gifts {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: $family;
+    text-align: center;
+    &__title {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    &__text {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .gifts {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        &__title {
+            margin-bottom: 15px;
+        }
+        &__text {
+            margin-bottom: 40px;
+        }
+    }
+}
+@media screen and (min-width: 1280px) {
+    .gifts {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        &__text {
+            margin-bottom: 60px;
+        }
+    }
+}

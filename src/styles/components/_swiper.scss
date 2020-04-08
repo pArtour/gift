@@ -1,0 +1,113 @@
+.swiper {
+    &__slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgba($color: $gray, $alpha: .3);
+        padding-bottom: 20px;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+        
+    }
+    &__title {
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: $regular;
+    }
+    &__link {
+        color: $black;
+        font-size: 20px;
+        text-decoration: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .swiper {
+        &-container {
+            display: flex;
+            justify-content: center;
+            // overflow: visible;
+        }
+        &-wrapper {
+            display: grid;
+            justify-items: center;
+            grid-template-columns: 270px 270px;
+            grid-template-rows: 430px 430px;
+            grid-gap: 80px 145px;
+        }
+        &__slide {
+            // justify-content: start;
+            // margin-bottom: 40px;
+            // height: 430px;
+            &:nth-child(2n-1) {
+                // margin-right: 80px;
+            }
+        }
+        &__img {
+            width: 270px;
+            height: 270px;
+
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .swiper {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        &__slide {
+            transition: all .3s ease-out;
+            &:hover, {
+                background-color: #fff;
+                box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+            }
+        }
+        &__img {
+            margin: 0;
+        }
+        &__link {
+            &:focus, &:hover {
+                outline: none;
+                color: $yellow;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1280px) {
+    .swiper {
+        &-wrapper {
+            display: flex;
+            // grid-template-rows: 0em;
+        }
+        &__slide {
+            justify-content: start;
+            height: 435px;
+            text-align: left;
+            margin-right: 30px;
+            padding-bottom: 24px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        &__img {
+            margin-bottom: 25px;
+        }
+        &__link {
+            margin-top: auto;
+        }
+        &__title {
+            margin: 0;
+            margin-left: 24px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        &__link {
+            margin-left: 24px;
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+}
